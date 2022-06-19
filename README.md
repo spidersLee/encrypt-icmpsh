@@ -5,13 +5,13 @@
 
 使用方法：
 控制机：
-gcc -g icmpsendcmd.c icmp1send.c aes.c -o icmpsend
+gcc -g icmpsendcmd.c icmpsend.c aes.c -o icmpsend
 
 ./icmpsend  被控制机ip
 
 
 被控机：
-gcc -g testicmpback.c aes.c icmp1back.c -o icmpback
+gcc -g testicmpback.c aes.c icmpback.c -o icmpback
 
 nohup ./icmpback 控制机ip & (进入后台运行)
 
